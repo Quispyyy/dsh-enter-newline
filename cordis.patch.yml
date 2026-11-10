@@ -1,0 +1,4 @@
+# Inserts the plugin row into the web roster (same shape as other DSH bundles).
+- insert:
+    - id: enter-newline
+      name: dsh-enter-newline

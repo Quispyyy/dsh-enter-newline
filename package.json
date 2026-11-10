@@ -1,0 +1,55 @@
+{
+  "name": "dsh-enter-newline",
+  "version": "0.1.0",
+  "description": "DSH composer keys: Enter inserts a line break, Ctrl/Cmd+Enter sends.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "composer",
+    "keymap",
+    "keyboard",
+    "enter"
+  ],
+  "license": "MIT",
+  "author": "Quispyyy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quispyyy/dsh-enter-newline.git"
+  },
+  "homepage": "https://github.com/Quispyyy/dsh-enter-newline#readme",
+  "bugs": {
+    "url": "https://github.com/Quispyyy/dsh-enter-newline/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/harness.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
